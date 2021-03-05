@@ -1,4 +1,4 @@
-name: WF1
+name: WF2
 on:
   workflow_dispatch:
 jobs:
@@ -11,5 +11,5 @@ jobs:
           domain: ${{github.repository_owner}}
       - name: Push result to Testspace server
         run: |
-          testspace [wf1]results.xml 
+          testspace [wf2]results.xml 
         if: always()
